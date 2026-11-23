@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080c18">
+  <meta name="description" content="Explore Noltrix Apps — software, games and technology built by Noltrix Group.">
+  <title>Noltrix Apps — Explore the Next Generation</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Loading screen -->
+  <div id="loader">
+    <div class="loader-atom">
+      <div class="atom-ring ring-a"></div>
+      <div class="atom-ring ring-b"></div>
+      <div class="atom-ring ring-c"></div>
+      <div class="atom-core">N</div>
+    </div>
+    <div class="loader-title">NOLTRIX<span>APPS</span></div>
+    <div class="loader-subtitle">INITIALIZING EXPERIENCE</div>
+    <div class="loader-progress"><div id="loader-bar"></div></div>
+    <div id="loader-status">Preparing experience...</div>
+  </div>
+
+  <!-- Transition overlay -->
+  <div id="transition-screen">
+    <div class="transition-mark">N</div>
+  </div>
+
+  <!-- SVG icon definitions -->
+  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-search" viewBox="0 0 24 24">
+      <circle cx="10.8" cy="10.8" r="6.8" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <path d="m16 16 5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24">
+      <path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.3-6.2 3.3 1.2-6.8-5-4.9 6.9-1z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-grid" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <rect x="14" y="3" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <rect x="3" y="14" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <rect x="14" y="14" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    </symbol>
+    <symbol id="icon-list" viewBox="0 0 24 24">
+      <path d="M9 5h12M9 12h12M9 19h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="4" cy="5" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="19" r="1" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24">
+      <path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24">
+      <path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="brand">
+      <span class="brand-mark">N</span>
+      <span class="brand-text">NOLTRIX<span>APPS</span></span>
+    </a>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#explore" class="nav-link">Explore</a>
+      <a href="#games" class="nav-link" id="games-link">Games</a>
+      <a href="#about" class="nav-link">About</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-button" id="theme-open" title="Themes">◐</button>
+      <button class="icon-button" id="command-open" title="Command palette">⌕</button>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section" id="home">
+      <div class="hero-content reveal">
+        <div class="eyebrow"><span class="live-dot"></span> THE NOLTRIX ECOSYSTEM</div>
+        <h1>Ideas become<br><span class="gradient-text">experiences.</span></h1>
+        <p class="hero-description">
+          Exploring the next generation of software, games and technology.
+          Discover the projects shaping the Noltrix ecosystem.
+        </p>
+        <div class="hero-buttons">
+          <a href="#explore" class="primary-button">Explore projects <span>↗</span></a>
+          <button class="secondary-button" id="hero-command">⌘ Explore commands</button>
+        </div>
+        <div class="hero-caption">
+          <span class="caption-line"></span>
+          <span>BUILT WITH VISION. DESIGNED FOR WHAT'S NEXT.</span>
+        </div>
+      </div>
+
+      <!-- Hero atom animation -->
+      <div class="hero-visual reveal">
+        <div class="hero-visual-glow"></div>
+        <div class="hero-atom">
+          <div class="hero-orbit orbit-one"><span class="orbit-particle"></span></div>
+          <div class="hero-orbit orbit-two"><span class="orbit-particle"></span></div>
+          <div class="hero-orbit orbit-three"><span class="orbit-particle"></span></div>
+          <div class="hero-atom-core"><span>N</span></div>
+          <div class="atom-small-dot dot-one"></div>
+          <div class="atom-small-dot dot-two"></div>
+          <div class="atom-small-dot dot-three"></div>
+        </div>
+        <div class="visual-label label-top">NOLTRIX</div>
+        <div class="visual-label label-bottom">DIGITAL ECOSYSTEM <span>01 / 09</span></div>
+      </div>
+
+      <div class="hero-scroll">
+        <span class="scroll-line"></span>
+        SCROLL TO EXPLORE
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats-strip">
+      <div class="stat">
+        <span class="stat-number">09</span>
+        <span class="stat-label">PROJECTS</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">03</span>
+        <span class="stat-label">CATEGORIES</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">∞</span>
+        <span class="stat-label">POSSIBILITIES</span>
+      </div>
+    </section>
+
+    <!-- Explore -->
+    <section class="explore-section section" id="explore">
+      <div class="section-heading reveal">
+        <div>
+          <div class="eyebrow">THE COLLECTION</div>
+          <h2>Explore the <span class="gradient-text">ecosystem.</span></h2>
+        </div>
+        <p class="section-heading-side">A growing collection of ideas, products<br>and experiences under Noltrix.</p>
+      </div>
+
+      <div class="toolbar reveal">
+        <div class="search-box">
+          <svg><use href="#icon-search"/></svg>
+          <input type="search" id="search-input" placeholder="Search projects..." autocomplete="off">
+          <kbd>/</kbd>
+        </div>
+
+        <div class="filters" id="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="apps">Software</button>
+          <button class="filter-btn" data-filter="games">Games</button>
+          <button class="filter-btn" data-filter="products">Hardware</button>
+          <button class="filter-btn" data-filter="favorites"><svg class="mini-icon"><use href="#icon-star"/></svg> Saved</button>
+        </div>
+
+        <div class="view-tools">
+          <select id="project-sort">
+            <option value="default">Default order</option>
+            <option value="az">A–Z</option>
+            <option value="za">Z–A</option>
+          </select>
+          <button class="view-button active" id="grid-view" title="Grid view"><svg><use href="#icon-grid"/></svg></button>
+          <button class="view-button" id="list-view" title="List view"><svg><use href="#icon-list"/></svg></button>
+        </div>
+      </div>
+
+      <div class="results-line">
+        <span><strong id="project-count">9</strong> PROJECTS</span>
+        <span>SELECT A PROJECT TO DISCOVER MORE <span class="results-star">✳</span></span>
+      </div>
+
+      <div class="projects-grid" id="apps-grid">
+
+        <!-- ShareFlow -->
+        <article class="project-card" data-name="ShareFlow" data-category="apps" data-icon="share" data-description="Move files, links and content between devices with a streamlined sharing experience." data-details="ShareFlow is designed to make sharing between devices easier. The project focuses on a smooth transfer workflow, intuitive interface and cross-device experiences." data-status="In Development">
+          <div class="card-top">
+            <div class="project-icon icon-share">↗</div>
+            <button class="favorite-btn" aria-label="Save ShareFlow"><svg><use href="#icon-star"/></svg></button>
+          </div>
+          <div class="card-category">SOFTWARE / UTILITIES</div>
+          <h3>ShareFlow</h3>
+          <p>Seamless file and content sharing between devices.</p>
+          <div class="card-bottom"><span class="status"><i></i> In Development</span><span class="card-arrow">↗</span></div>
+        </article>
+
+        <!-- Zorvex OS -->
+        <article class="project-card" data-name="Zorvex OS" data-category="apps" data-icon="os" data-description="An ambitious desktop operating system concept built around productivity, personalization and integrated AI." data-details="ZorvEX OS is envisioned as a customizable operating system with a modern desktop, system applications, intelligent assistance, multitasking and a unified ecosystem." data-status="In Development">
+          <div class="card-top">
+            <div class="project-icon icon-os">◈</div>
+            <button class="favorite-btn" aria-label="Save ZorvEX OS"><svg><use href="#icon-star"/></svg></button>
+          </div>
+          <div class="card-category">SOFTWARE / OPERATING SYSTEM</div>
+          <h3>ZorvEX OS</h3>
+          <p>A new desktop experience with productivity and intelligent tools.</p>
+          <div class="card-bottom"><span class="status"><i></i> In Development</span><span class="card-arrow">↗</span></div>
+        </article>
+
+        <!-- Productivity Suite -->
+        <article class="project-card" data-name="ZorvEX Productivity Suite" data-category="apps" data-icon="suite" data-description="A collection of connected tools for documents, spreadsheets, creative work and everyday productivity." data-details="The ZorvEX Productivity Suite is a planned integrated collection of applications for document editing, spreadsheets, presentations and organization. It is designed to connect with the ZorvEX ecosystem." data-status="In Development">
+          <div class="card-top">
+            <div class="project-icon icon-suite">▤</div>
+            <button class="favorite-btn" aria-label="Save ZorvEX Productivity Suite"><svg><use href="#icon-star"/></svg></button>
+          </div>
+          <div class="card-category">SOFTWARE / PRODUCTIVITY</div>
+          <h3>ZorvEX Productivity Suite</h3>
+          <p>Tools for documents, ideas, data and everyday work.</p>
+          <div class="card-bottom"><span class="status"><i></i> In Development</span><span class="card-arrow">↗</span></div>
+        </article>
+
+        <!-- AI Assistant -->
+        <article class="project-card" data-name="Noltrix AI Assistant" data-category="apps" data-icon="ai" data-description="A desktop AI assistant concept for helping users learn, create and work with their computers." data-details="The Noltrix AI Assistant is an AI assistant project intended to support conversation, voice interaction, learning, creative tools and computer-based workflows." data-status="In Development">
+          <div class="card-top">
+            <div class="project-icon icon-ai">✳</div>
+            <button class="favorite-btn" aria-label="Save Noltrix AI Assistant"><svg><use href="#icon-star"/></svg></button>
+          </div>
+          <div class="card-category">SOFTWARE / AI</div>
+          <h3>Noltrix AI Assistant</h3>
+          <p>An intelligent assistant designed to help you do more.</p>
+          <div class="card-bottom"><span class="status"><i></i> In Development</span><span class="card-arrow">↗</span></div>
+        </article>
+
+        <!-- Logistics Simulator -->
+        <article class="project-card" data-name="Logistics Simulator" data-category="games" data-icon="logistics" data-description="A PC simulation focused on transport, logistics, deliveries and managing a growing operation." data-details="Logistics Simulator is a PC game concept centred on transportation and logistics. Build operations, manage vehicles, handle jobs and grow your transport business." data-status="Planned">
+          <div class="card-top">
+            <div class="project-icon icon-logistics">▰</div>
+            <button class="favorite-btn" aria-label="Save Logistics Simulator"><svg><use href="#icon-star"/></svg></button>
+          </div>
+          <div class="card-category">GAMES / SIMULATION</div>
+          <h3>Logistics Simulator</h3>
+          <p>Build and manage a growing transport operation.</p>
+          <div class="card-bottom"><span class="status planned"><i></i> Planned</span><span class="card-arrow">↗</span></div>
+        </article>
+
+        <!-- Silent Battalion -->
+        <article class="project-card" data-name="Silent Battalion" data-category="games" data-icon="silent" data-description="A tactical military game concept with immersive missions, story-driven gameplay and multiplayer ambitions." data-details="Silent Battalion is a planned military game project focused on campaign missions, tactical gameplay, immersive environments and competitive modes. This is a project concept, not a released game." data-status="Planned">
+          <div class="card-top">
+            <div class="project-icon icon-silent">⌖</div>
+            <button class="favorite-btn" aria-label="Save Silent Battalion"><svg><use href="#icon-star"/></svg></button>
+          </div>
+          <div class="card-category">GAMES / ACTION</div>
+          <h3>Silent Battalion</h3>
+          <p>A mission-driven tactical action game experience.</p>
+          <div class="card-bottom"><span class="status planned"><i></i> Planned</span><span class="card-arrow">↗</span></div>
+        </article>
+
+        <!-- FINAL XI -->
+        <article class="project-card" data-name="FINAL XI" data-category="games" data-icon="football" data-description="A football game concept built around immersive matches, tactics, careers and competition." data-details="FINAL XI is a planned football game aiming to combine realistic gameplay, tactical depth, career modes, team management and online competition." data-status="Planned">
+          <div class="card-top">
+            <div class="project-icon icon-football">⚽</div>
+            <button class="favorite-btn" aria-label="Save FINAL XI"><svg><use href="#icon-star"/></svg></button>
+          </div>
+          <div class="card-category">GAMES / SPORTS</div>
+          <h3>FINAL XI</h3>
+          <p>Football. Strategy. Competition. Your game.</p>
+          <div class="card-bottom"><span class="status planned"><i></i> Planned</span><span class="card-arrow">↗</span></div>
+        </article>
+
+        <!-- REDLINE -->
+        <article class="project-card" data-name="REDLINE" data-category="games" data-icon="racing" data-description="A motorsport racing experience focused on competition, cars, driving and race weekends." data-details="REDLINE is a planned racing game concept. Its vision includes a range of racing experiences, driving modes, progression and motorsport-inspired competition." data-status="Planned">
+          <div class="card-top">
+            <div class="project-icon icon-racing">⌁</div>
+            <button class="favorite-btn" aria-label="Save REDLINE"><svg><use href="#icon-star"/></svg></button>
+          </div>
+          <div class="card-category">GAMES / RACING</div>
+          <h3>REDLINE</h3>
+          <p>Race, compete and push beyond the limits.</p>
+          <div class="card-bottom"><span class="status planned"><i></i> Planned</span><span class="card-arrow">↗</span></div>
+        </article>
+
+        <!-- Hardware -->
+        <article class="project-card" data-name="Noltrix Gaming Hardware" data-category="products" data-icon="hardware" data-description="A future gaming hardware and accessories concept covering computers, peripherals and immersive technology." data-details="Noltrix Gaming Hardware is a future product concept exploring gaming laptops, headsets, racing wheels, virtual reality and additional gaming accessories." data-status="Concept">
+          <div class="card-top">
+            <div class="project-icon icon-hardware">⌑</div>
+            <button class="favorite-btn" aria-label="Save Noltrix Gaming Hardware"><svg><use href="#icon-star"/></svg></button>
+          </div>
+          <div class="card-category">PRODUCTS / HARDWARE</div>
+          <h3>Noltrix Gaming Hardware</h3>
+          <p>Hardware concepts for gaming and immersive experiences.</p>
+          <div class="card-bottom"><span class="status planned"><i></i> Concept</span><span class="card-arrow">↗</span></div>
+        </article>
+
+      </div>
+
+      <div class="empty-state" id="empty-state">
+        <div class="empty-icon">⌕</div>
+        <h3>No projects found</h3>
+        <p>Try another search or category.</p>
+        <button class="secondary-button" id="reset-search">Reset filters</button>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about-section section" id="about">
+      <div class="about-grid reveal">
+        <div class="about-left">
+          <div class="eyebrow">ABOUT NOLTRIX</div>
+          <h2>Building beyond<br><span class="gradient-text">the ordinary.</span></h2>
+        </div>
+        <div class="about-right">
+          <p>Noltrix is an evolving technology ecosystem focused on creating software, games and products that bring ideas to life.</p>
+          <p>Noltrix Apps is the place to explore that ecosystem — discover projects, follow development and see what's coming next.</p>
+          <a href="#explore" class="text-link">Explore our projects <span>↗</span></a>
+        </div>
+      </div>
+      <div class="about-banner">
+        <div class="about-banner-mark">N</div>
+        <div class="about-banner-text">
+          <span>NOLTRIX GROUP</span>
+          <strong>Exploring the next generation.</strong>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="#home" class="brand footer-brand">
+      <span class="brand-mark">N</span>
+      <span class="brand-text">NOLTRIX<span>APPS</span></span>
+    </a>
+    <p>Exploring the next generation.</p>
+    <div class="footer-right">© <span id="year"></span> NOLTRIX GROUP</div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div class="modal-backdrop" id="app-modal">
+    <div class="project-modal">
+      <button class="modal-close" id="modal-close"><svg><use href="#icon-close"/></svg></button>
+      <div class="modal-icon" id="modal-icon">N</div>
+      <div class="eyebrow" id="modal-category">PROJECT</div>
+      <h2 id="modal-title">Project Name</h2>
+      <p class="modal-description" id="modal-description"></p>
+      <div class="modal-details" id="modal-details"></div>
+      <div class="modal-status"><span class="status" id="modal-status"><i></i> Status</span></div>
+      <button class="primary-button modal-done" id="modal-button">Back to projects <span>↗</span></button>
+    </div>
+  </div>
+
+  <!-- Theme Panel -->
+  <div class="panel-overlay" id="theme-overlay"></div>
+  <aside class="side-panel" id="theme-panel">
+    <div class="panel-header">
+      <div><div class="eyebrow">PERSONALIZATION</div><h2>Theme Studio</h2></div>
+      <button class="modal-close" id="theme-close"><svg><use href="#icon-close"/></svg></button>
+    </div>
+    <p class="panel-description">Choose a visual atmosphere for your Noltrix Apps experience.</p>
+    <div class="theme-current">CURRENT THEME <strong id="current-theme-name">Midnight</strong></div>
+    <div class="theme-grid" id="theme-grid">
+      <button class="theme-option" data-theme="midnight"><span class="theme-preview midnight-preview"></span>Midnight</button>
+      <button class="theme-option" data-theme="slate"><span class="theme-preview slate-preview"></span>Slate</button>
+      <button class="theme-option" data-theme="light"><span class="theme-preview light-preview"></span>Light</button>
+      <button class="theme-option" data-theme="cyber"><span class="theme-preview cyber-preview"></span>Cyber</button>
+      <button class="theme-option" data-theme="ocean"><span class="theme-preview ocean-preview"></span>Ocean</button>
+      <button class="theme-option" data-theme="crimson"><span class="theme-preview crimson-preview"></span>Crimson</button>
+      <button class="theme-option" data-theme="violet"><span class="theme-preview violet-preview"></span>Violet</button>
+      <button class="theme-option" data-theme="emerald"><span class="theme-preview emerald-preview"></span>Emerald</button>
+      <button class="theme-option" data-theme="sunset"><span class="theme-preview sunset-preview"></span>Sunset</button>
+      <button class="theme-option" data-theme="rose"><span class="theme-preview rose-preview"></span>Rose</button>
+      <button class="theme-option" data-theme="gold"><span class="theme-preview gold-preview"></span>Gold</button>
+      <button class="theme-option" data-theme="matrix"><span class="theme-preview matrix-preview"></span>Matrix</button>
+      <button class="theme-option" data-theme="arctic"><span class="theme-preview arctic-preview"></span>Arctic</button>
+      <button class="theme-option" data-theme="coffee"><span class="theme-preview coffee-preview"></span>Coffee</button>
+      <button class="theme-option" data-theme="monochrome"><span class="theme-preview monochrome-preview"></span>Mono</button>
+      <button class="theme-option" data-theme="aurora"><span class="theme-preview aurora-preview"></span>Aurora</button>
+      <button class="theme-option" data-theme="mint"><span class="theme-preview mint-preview"></span>Mint</button>
+      <button class="theme-option" data-theme="lavender"><span class="theme-preview lavender-preview"></span>Lavender</button>
+      <button class="theme-option" data-theme="tangerine"><span class="theme-preview tangerine-preview"></span>Tangerine</button>
+      <button class="theme-option" data-theme="ruby"><span class="theme-preview ruby-preview"></span>Ruby</button>
+    </div>
+  </aside>
+
+  <!-- Command Palette -->
+  <div class="command-overlay" id="command-overlay">
+    <div class="command-box">
+      <div class="command-input-row">
+        <svg><use href="#icon-search"/></svg>
+        <input id="command-input" placeholder="What would you like to do?" autocomplete="off">
+        <kbd>ESC</kbd>
+      </div>
+      <div class="command-label">QUICK ACTIONS</div>
+      <div id="command-results">
+        <button class="command-item" data-command="explore"><span>⌘</span> Explore all projects <kbd>↵</kbd></button>
+        <button class="command-item" data-command="games"><span>◈</span> View games</button>
+        <button class="command-item" data-command="themes"><span>◐</span> Open Theme Studio</button>
+        <button class="command-item" data-command="favorites"><span>☆</span> View saved projects</button>
+        <button class="command-item" data-command="about"><span>ⓘ</span> About Noltrix</button>
+      </div>
+      <div class="command-footer">↑ ↓ NAVIGATE <span>ENTER SELECT</span> <span>ESC CLOSE</span></div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
